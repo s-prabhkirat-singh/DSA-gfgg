@@ -8,5 +8,11 @@ public class eff_trail_zero {
     }
     public static void main(String[] args) {
         System.out.println(counttrail(100));
+        double x=1.3   , y=2.3;
+        double z=x+y;
+        System.out.println(z);
     }
 }
+
+//Time complexity(log n)
+  

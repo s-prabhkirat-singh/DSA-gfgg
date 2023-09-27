@@ -1,8 +1,13 @@
 public class Trail_zero {
     
-
-
-    static long  fact(int n){
+  static int trail_zero(int x){
+    int rem=0;
+    for(int i=5;i<=x;i=i*5){
+      rem=rem+(x/i);
+    }
+    return rem;
+  }
+   static long  fact(int n){
       if(n==0||n==1){
           return 1;
       }else{
@@ -10,8 +15,8 @@ public class Trail_zero {
       }
       }
       public static void main(String[] args) {
-        int count =0;
-          long f=fact(10);
+        // int count =0;
+        //   long f=fact(10);
         // Ist approach
 
 
@@ -25,17 +30,8 @@ public class Trail_zero {
         //   System.out.println(count);
 
             // IInd approach
-            while(f%10==0){
-                count++;
-                f=f/10;
-            }
-            System.out.println(count);
-
-
-
-
-
-
+        
+            System.out.println(trail_zero(100));
 
       }}
   
